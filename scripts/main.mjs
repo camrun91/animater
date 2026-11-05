@@ -3077,7 +3077,6 @@ const openDetectedWater = async () => {
     textures,
     notify: (message) => { ui.notifications?.info(message); },
     warn: (message) => { ui.notifications?.warn(message); },
-    confirm: (options) => foundry.applications.api.DialogV2.confirm(options),
   });
 };
 Hooks.on("getSceneControlButtons", (controls) => {
